@@ -34,7 +34,7 @@ export default {
       publicPath: process.env.BASE_URL,
       options: {
         getActiveSection: this.getActiveSection,
-        paddingTop: "15%",
+        paddingTop: "10%",
         menu: "#myMenu",
         anchors: ["home", "skills", "projects", "open-source"],
         sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"]
