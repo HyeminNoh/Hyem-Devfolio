@@ -56,5 +56,12 @@ export default {
 }
 .main-btn #basic-btn{
   margin-right: 2%;
+  border-color: #438945;
+  color: #438945;
+}
+.main-btn #basic-btn:hover{
+  margin-right: 2%;
+  background-color: #438945;
+  color: #ffffff;
 }
 </style>
