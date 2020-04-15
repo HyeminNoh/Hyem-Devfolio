@@ -5,7 +5,7 @@
       href="#home"
       style="color: #438945; font-weight:bold; font-size: 1.8em"
     >Hyem's Devfolio</b-navbar-brand>
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle id="nav-toggle" target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#home"><p class="item">Home</p></b-nav-item>
@@ -18,10 +18,14 @@
 </template>
 <style lang="css">
 #menu {
-  margin: 2%;
+  padding: 2%;
+  background-color: #F7F4E9;
 }
 #nav-collapse {
   text-align: right;
+}
+#nav-toggle{
+  background-color: #C6AD8F;
 }
 .item {
   color: #1d1d2c;
