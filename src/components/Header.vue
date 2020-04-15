@@ -30,9 +30,11 @@
 .item {
   color: #1d1d2c;
   font-size: 1.2em;
+  font-weight: bold;
 }
 .item:hover {
   outline: none;
   color: #eba63f;
+  font-weight: bold;
 }
 </style>
