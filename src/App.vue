@@ -35,6 +35,7 @@ export default {
       options: {
         getActiveSection: this.getActiveSection,
         paddingTop: "10%",
+        autoScrolling:false,
         menu: "#myMenu",
         anchors: ["home", "skills", "projects", "open-source"],
         sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"]
