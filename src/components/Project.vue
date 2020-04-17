@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section fp-auto-height">
     <div class="content">
       <p class="content-header">🌱 Projects</p>
       <hr>
@@ -18,6 +18,7 @@
           </b-card-body>
           <template v-slot:footer>
             <div style="text-align: right;">
+              <b-button id="link-btn" v-if="value.link" :href="value.link">🔍 구경하기</b-button>
               <b-button id="github-btn" :href="value.github">
                 <font-awesome-icon :icon="faGithub"/> Github
               </b-button>
@@ -42,6 +43,7 @@ export default {
           detail: "코로나-19로 인한 인종차별 문제를 계기로 제작한 올바른 코로나 정보 전달 사이트",
           stack: ["SpringBoot", "Jsoup", "Vue.js", "Bootstrap"],
           img: "https://github.com/HyeminNoh/IamNotAVirus/raw/master/screenshoot/main_screenshot.png",
+          link: "https://iamnotavirus-campaign.com",
           github: "",
         },
         {
@@ -64,13 +66,6 @@ export default {
 }
 </script>
 <style>
-body {
-  font-family: arial, helvetica;
-}
-.section {
-  position: relative;
-  text-align: center;
-}
 .project-cards{
   margin: 3%;
 }
@@ -87,6 +82,16 @@ body {
 #github-btn{
   background-color: gray;
   border-color: gray;
+}
+#link-btn{
+  background-color: gray;
+  border-color: gray;
+  margin-right: 1%;;
+}
+#link-btn:hover{
+  background-color: #EBA63F;
+  border-color: #EBA63F;
+  margin-right: 1%;;
 }
 
 </style>

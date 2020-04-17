@@ -18,7 +18,8 @@
 </template>
 <style lang="css">
 #menu {
-  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #F7F4E9;
 }
 #nav-collapse {

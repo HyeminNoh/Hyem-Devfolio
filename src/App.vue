@@ -33,12 +33,10 @@ export default {
     return {
       publicPath: process.env.BASE_URL,
       options: {
-        getActiveSection: this.getActiveSection,
-        paddingTop: "10%",
-        autoScrolling:false,
-        menu: "#myMenu",
+        paddingTop: "5%",
         anchors: ["home", "skills", "projects", "open-source"],
-        sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"]
+        sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"],
+        responsiveWidth: 1366
       }
     };
   }

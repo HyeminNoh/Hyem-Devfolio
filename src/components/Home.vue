@@ -1,6 +1,6 @@
 <template>
-  <div class="section">
-    <div class="content">
+  <div class="section fp-auto-height">
+    <div class="content align-middle">
       <p id="title">안녕하세요 <span class="highlight-txt">노혜민</span>입니다 👋</p>
       <br>
       <p id="detail"><span class="highlight-txt">Web Full-stack Developer</span>를 꿈꾸는 주니어 개발자입니다 👩‍💻
@@ -9,9 +9,9 @@
         <br>7년 쿠키런 외길인생, I 🧡쿠키런
       </p>
       <div class="main-btn">
-      <b-button id="basic-btn" variant="outline-success" size="lg" :href="email">CONTACT ME ✉️</b-button>
-      <b-button id="basic-btn" variant="outline-success" size="lg" :href="resume">SEE MY RESUME 👀</b-button>
-    </div>
+        <b-button id="basic-btn" variant="outline-success" size="lg" :href="email">CONTACT ME ✉️</b-button>
+        <b-button id="basic-btn" variant="outline-success" size="lg" :href="resume">SEE MY RESUME 👀</b-button>
+      </div>
     </div>
   </div>
 </template>
@@ -30,15 +30,6 @@ export default {
 }
 </script>
 <style>
-.section {
-  position: relative;
-  text-align: center;;
-}
-.content{
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: left;
-}
 #title{
   font-size: 2.5em;
   font-weight: bold;

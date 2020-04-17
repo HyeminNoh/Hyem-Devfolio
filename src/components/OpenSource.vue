@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section fp-auto-height">
     <div class="content">
       <b-row>
         <b-col>
@@ -7,7 +7,7 @@
         </b-col>
         <b-col style="text-align:right">
           <b-button size="lg" id="github-btn" href="https://github.com/hyeminnoh" target="_blank">
-          <font-awesome-icon :icon="faGithub" />More...
+          <font-awesome-icon :icon="faGithub" /> More...
         </b-button>
         </b-col>
       </b-row>
@@ -155,13 +155,6 @@ export default {
 };
 </script>
 <style>
-body {
-  font-family: arial, helvetica;
-}
-.section {
-  position: relative;
-  text-align: center;
-}
 .btn-div {
   margin-top: 1%;
   text-align: right;
