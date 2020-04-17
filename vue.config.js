@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
-    publicPath: '/hyem-devfolio/',
+    publicPath: '/Hyem-Devfolio/',
     chainWebpack: config => {
         config.module
           .rule('images')
