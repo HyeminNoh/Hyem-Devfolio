@@ -4,7 +4,7 @@
       <p id="title">안녕하세요 <span class="highlight-txt">노혜민</span>입니다 👋</p>
       <br>
       <p id="detail"><span class="highlight-txt">Web Full-stack Developer</span>를 꿈꾸는 주니어 개발자입니다 👩‍💻
-        <br>타고난 외향적인 성격, 완벽한 <span class="highlight-txt">OOOO</span>타입 😉
+        <br>타고난 외향적인 성격, 완벽한 <span class="highlight-txt">ESFJ</span>타입 😉
         <br>한번 시작한건 끝을 보는 타입, 밤샘을 즐기는 편 🔥
         <br>7년 쿠키런 외길인생, I 🧡쿠키런
       </p>
