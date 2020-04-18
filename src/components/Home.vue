@@ -10,7 +10,7 @@
       </p>
       <div class="main-btn">
         <b-button id="basic-btn" variant="outline-success" size="lg" :href="email">CONTACT ME ✉️</b-button>
-        <b-button id="basic-btn" variant="outline-success" size="lg" :href="resume">SEE MY RESUME 👀</b-button>
+        <b-button id="basic-btn" variant="outline-success" size="lg" :href="resume" target="_blank">SEE MY RESUME 👀</b-button>
       </div>
     </div>
   </div>
