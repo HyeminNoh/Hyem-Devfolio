@@ -12,10 +12,20 @@
         <b-nav-item href="#skills"><p class="item">Skills</p></b-nav-item>
         <b-nav-item href="#projects"><p class="item">Projects</p></b-nav-item>
         <b-nav-item href="#open-source"><p class="item">Open-Source</p></b-nav-item>
+        <b-nav-item href="https://github.com/HyeminNoh" target="_blank"><img :src="github" alt="github" style="width: 2em"></b-nav-item>
+        <b-nav-item href="http://hyem-study.tistory.com/" target="_blank"><img :src="tistory" alt="tistory" style="width: 2em"></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
+<script>
+export default {
+  computed: {
+    tistory () { return require('@/assets/tistory-logo-fill.svg') },
+    github () { return require('@/assets/github-brands.svg') },
+  }
+};
+</script>
 <style lang="css">
 #menu {
   padding-left: 5%;

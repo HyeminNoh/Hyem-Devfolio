@@ -80,7 +80,7 @@ export default {
   height: 20em;
 }
 .project-title{
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: bold;
   color: black;
 }

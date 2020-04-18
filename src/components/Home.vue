@@ -24,7 +24,7 @@ export default {
   data: function(){
     return{
       email: 'mailto:shrmffkfk@naver.com',
-      resume: 'resume link',
+      resume: 'https://drive.google.com/file/d/1ag1UL_PQcwdsbeiw1uiNKPEesmo5a2oE/view?usp=sharing',
     }
   },
   created: function(){
