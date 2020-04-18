@@ -1,24 +1,22 @@
 # hyem-devfolio
 
-## Project setup
-```
-npm install
-```
+👉 [Hyemin's Developer Portfolio](https://hyeminnoh.github.io/Hyem-Devfolio/) Click!  
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Skill Set
 
-### Compiles and minifies for production
-```
-npm run build
-```
+| Category | Backend | Frontend |  
+|:---:|:---:|:---:|  
+| Language |  | Javascript |  
+| Framework | Node.js & Express | Vue.js |  
+| IDE | VSCode |  |
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 구현 내용
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* [Fullpage.js](https://github.com/alvarotrigo/fullpage.js) 오픈소스를 활용한 fullpage 구성
+* Bootstrap의 Layout, Grid, Navbar 활용
+* Font-Awesome Icon 모듈 활용
+* Github GraphQL API를 활용해 Pinned Repository 정보 조회
+
+## 보완할 부분
+
+* fullpage.js section 높이 contents 내용에 맞게 조절
