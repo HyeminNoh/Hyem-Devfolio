@@ -1,5 +1,5 @@
 <template>
-  <div class="section fp-auto-height">
+  <div class="section">
     <div class="content align-middle">
       <p id="title">안녕하세요 <span class="highlight-txt">노혜민</span>입니다 👋</p>
       <br>
@@ -26,6 +26,9 @@ export default {
       email: 'mailto:shrmffkfk@naver.com',
       resume: 'resume link',
     }
+  },
+  created: function(){
+    
   }
 }
 </script>
@@ -43,16 +46,18 @@ export default {
   font-weight: bold;
 }
 .main-btn{
-  margin-top: 10%;
+  margin-top: 3em;
 }
 .main-btn #basic-btn{
-  margin-right: 2%;
+  margin-right: 0.5em;
   border-color: #438945;
   color: #438945;
+  font-size: 1.2em;
 }
 .main-btn #basic-btn:hover{
-  margin-right: 2%;
+  margin-right: 0.5em;
   background-color: #438945;
   color: #ffffff;
+  font-size: 1.2em;
 }
 </style>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
 import VueFullPage from 'vue-fullpage.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'

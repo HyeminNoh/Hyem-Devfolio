@@ -1,10 +1,10 @@
 <template>
-  <div class="section fp-auto-height">
+  <div class="section">
     <div class="content">
       <p class="content-header">🌱 Skills</p>
       <hr />
       <b-row>
-        <b-col md="5">
+        <b-col md="6">
           <ul class="skill-icons">
             <li v-for="(item, index) in icons" :key="index" class="icon-inline">
               <font-awesome-icon class="dev-icon" :icon="item" size="6x" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="section fp-auto-height">
+  <div class="section">
     <div class="content">
       <b-row>
         <b-col>
@@ -23,13 +23,13 @@
               <div class="repo-stats">
                 <div class="repo-left-stat">
                   <span>
-                    <p><font-awesome-icon :icon="faStar" :color="gray"/> {{ pinnedRepo[n].node.stargazers.totalCount }}</p>
+                    <p><font-awesome-icon :icon="faStar" color="#808080"/> {{ pinnedRepo[n].node.stargazers.totalCount }}</p>
                   </span>
                   <span v-if="pinnedRepo[n].node.primaryLanguage">
                     <p><font-awesome-icon :icon="faCircle" :color="pinnedRepo[n].node.primaryLanguage.color"/> {{ pinnedRepo[n].node.primaryLanguage.name }}</p>
                   </span>
                   <span>
-                    <p><font-awesome-icon :icon="faCodeBranch" :color="gray"/> {{ pinnedRepo[n].node.forkCount }}</p>
+                    <p><font-awesome-icon :icon="faCodeBranch" color="#808080"/> {{ pinnedRepo[n].node.forkCount }}</p>
                   </span>
                 </div>
                 <div class="repo-right-stat">
@@ -47,13 +47,13 @@
               <div class="repo-stats">
                 <div class="repo-left-stat">
                   <span>
-                    <p><font-awesome-icon :icon="faStar" :color="gray"/> {{ pinnedRepo[n+1].node.stargazers.totalCount }}</p>
+                    <p><font-awesome-icon :icon="faStar" color="#808080"/> {{ pinnedRepo[n+1].node.stargazers.totalCount }}</p>
                   </span>
                   <span v-if="pinnedRepo[n+1].node.primaryLanguage">
                     <p><font-awesome-icon :icon="faCircle" :color="pinnedRepo[n+1].node.primaryLanguage.color"/> {{ pinnedRepo[n+1].node.primaryLanguage.name }}</p>
                   </span>
                   <span>
-                    <p><font-awesome-icon :icon="faCodeBranch" :color="gray"/> {{ pinnedRepo[n+1].node.forkCount }}</p>
+                    <p><font-awesome-icon :icon="faCodeBranch" color="#808080"/> {{ pinnedRepo[n+1].node.forkCount }}</p>
                   </span>
                 </div>
                 <div class="repo-right-stat">
@@ -101,7 +101,7 @@ export default {
       request: operation => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${process.env.VUE_APP_GITHUB_TOKEN}`
+            authorization: `Bearer ${atob(process.env.VUE_APP_GITHUB_TOKEN)}`
           }
         });
       }
@@ -155,24 +155,8 @@ export default {
 };
 </script>
 <style>
-.btn-div {
-  margin-top: 1%;
-  text-align: right;
-}
-#open-source-title {
-  color: black;
-}
-#open-source-title:hover {
-  color: #438945;
-}
-#language-text {
-  margin-right: 20px;
-}
-#starCount-text {
-  margin-right: 20px;
-}
 .repo-cards-main-div{
-  padding-bottom: 5%;
+  padding-bottom: 3em;
 }
 .repo-card-div {
   color: rgb(88, 96, 105);

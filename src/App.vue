@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import FullPage from 'vue-fullpage.js/src/FullPage'
 import Header from './components/Header.vue';
 import Home from './components/Home.vue';
 import Skills from './components/Skill.vue';
@@ -27,7 +28,8 @@ export default {
     Home,
     Skills,
     Projects,
-    OpenSource
+    OpenSource,
+    FullPage
   },
   data: function() {
     return {
@@ -36,7 +38,7 @@ export default {
         paddingTop: "5%",
         anchors: ["home", "skills", "projects", "open-source"],
         sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"],
-        responsiveWidth: 1366
+        scrollOverflow: true,
       }
     };
   }
