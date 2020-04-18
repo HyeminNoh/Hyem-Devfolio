@@ -21,8 +21,8 @@
 <script>
 export default {
   computed: {
-    tistory () { return require('@/assets/tistory-logo-fill.svg') },
-    github () { return require('@/assets/github-brands.svg') },
+    tistory () { return require('../assets/tistory-logo-fill.svg') },
+    github () { return require('../assets/github-brands.svg') },
   }
 };
 </script>
