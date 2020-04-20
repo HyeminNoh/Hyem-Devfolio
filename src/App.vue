@@ -39,6 +39,7 @@ export default {
         anchors: ["home", "skills", "projects", "open-source"],
         sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"],
         scrollOverflow: true,
+        recordHistory: false,
       }
     };
   }
