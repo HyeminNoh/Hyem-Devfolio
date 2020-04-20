@@ -20,3 +20,5 @@
 ## 보완할 부분
 
 * fullpage.js section 높이 contents 내용에 맞게 조절
+* Container와 Component 분리
+* Home 꾸미기
