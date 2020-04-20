@@ -1,6 +1,6 @@
 <template>
-  <div class="section">
-    <div class="content">
+  <div class="section fp-auto-height">
+    <div class="content" id="open-source-content">
       <b-row>
         <b-col>
           <p class="content-header">🌱 Open Source Projects</p>
@@ -155,8 +155,9 @@ export default {
 };
 </script>
 <style>
-.repo-cards-main-div{
-  padding-bottom: 3em;
+#open-source-content{
+  height: auto;
+  padding-bottom: 5em;
 }
 .repo-card-div {
   color: rgb(88, 96, 105);

@@ -1,10 +1,10 @@
 <template>
-  <div class="section">
-    <div class="content">
+  <div class="section fp-auto-height">
+    <div class="content" id="project-content">
       <p class="content-header">🌱 Projects</p>
       <hr>
       <b-row>
-        <b-col md="4" v-for="(value, index) in projects" :key="index">
+        <b-col lg="4" md="6" sm="12" v-for="(value, index) in projects" :key="index">
           <div class="project-card">
             <div class="project-img">
               <b-img :src="value.img" fluid center style="height: 18em;"/>
@@ -69,6 +69,19 @@ export default {
 }
 </script>
 <style>
+@media all and (min-width: 960px) {
+    #project-content{
+      height: 100%;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+    #project-content{
+      height: auto !important;
+      padding-bottom: 200%;
+    }
+}
+
 .project-card {
   color: rgb(88, 96, 105);
   background-color: rgb(255, 255, 255);
