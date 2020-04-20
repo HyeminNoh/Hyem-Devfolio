@@ -1,6 +1,6 @@
 <template>
-  <div class="section">
-    <div class="content">
+  <div class="section fp-auto-height">
+    <div class="content" id="skill-content">
       <p class="content-header">🌱 Skills</p>
       <hr />
       <b-row>
@@ -79,6 +79,15 @@ export default {
 };
 </script>
 <style>
+#skill-content{
+ height: auto;
+}
+@media all and (max-width: 599px) and (min-width: 320px) {
+  #skill-content{
+    height: auto;
+    padding-bottom: 5%;
+  }
+}
 .skill-icons{
   font-size: 1em;
 }

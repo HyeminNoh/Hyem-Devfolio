@@ -159,6 +159,12 @@ export default {
   height: auto;
   padding-bottom: 5em;
 }
+@media all and (max-width: 599px) and (min-width: 320px) {
+  #open-source-content{
+    height: auto;
+    padding-bottom: 5%;
+  }
+}
 .repo-card-div {
   color: rgb(88, 96, 105);
   background-color: rgb(255, 255, 255);

@@ -78,7 +78,7 @@ export default {
 @media all and (max-width: 599px) and (min-width: 320px) {
     #project-content{
       height: auto !important;
-      padding-bottom: 200%;
+      padding-bottom: 10%;
     }
 }
 
