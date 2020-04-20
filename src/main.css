@@ -147,8 +147,8 @@ body {
 .align-middle {
     position: absolute;
     top: 50%;
-    /*요소의 높이의 반(50%) 만큼 위로 이동*/
-    transform: translateY(-60%);
+    /*요소의 높이의 반 보다 조금 위(70%) 만큼 위로 이동*/
+    transform: translateY(-70%);
 }
 
 .content-header {
