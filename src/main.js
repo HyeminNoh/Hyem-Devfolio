@@ -6,6 +6,7 @@ import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverfl
 import VueFullPage from 'vue-fullpage.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VAnimateCss from 'v-animate-css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -13,7 +14,8 @@ import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
-Vue.use(VueFullPage);
+Vue.use(VueFullPage)
+Vue.use(VAnimateCss)
 library.add(faUserSecret)
 library.add(faFontAwesome)
 
