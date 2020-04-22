@@ -2,6 +2,10 @@
 
 👉 [Hyemin's Developer Portfolio](https://hyeminnoh.github.io/Hyem-Devfolio/) Click!  
 
+<kbd>
+  <img src="./screenshoot.png">
+</kbd>
+
 ## Skill Set
 
 | Category | Backend | Frontend |  
@@ -19,6 +23,4 @@
 
 ## 보완할 부분
 
-* fullpage.js section 높이 contents 내용에 맞게 조절
 * Container와 Component 분리
-* Home 꾸미기
