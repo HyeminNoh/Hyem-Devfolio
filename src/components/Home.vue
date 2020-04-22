@@ -83,7 +83,7 @@ export default {
 
 @media all and (max-width: 959px) and (min-width: 600px) {
     .front-div {
-    margin-top: 40%;
+    margin-top: 15em;
   }
   .background-div {
     visibility: hidden;
@@ -92,7 +92,7 @@ export default {
 
 @media all and (max-width: 599px) and (min-width: 320px) {
   .front-div {
-    margin-top: 35em;
+    margin-top: 25em;
   }
   .background-div {
     visibility: hidden;
