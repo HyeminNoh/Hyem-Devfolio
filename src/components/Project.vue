@@ -4,7 +4,7 @@
       <p class="content-header">🌱 Projects</p>
       <hr>
       <b-row>
-        <b-col lg="4" md="6" sm="12" v-for="(value, index) in projects" :key="index">
+        <b-col lg="6" md="6" sm="12" v-for="(value, index) in projects" :key="index">
           <div class="project-card">
             <div class="project-img">
               <b-img :src="value.img" fluid center style="height: 18em;"/>
@@ -57,6 +57,13 @@ export default {
           github: "https://github.com/HyeminNoh/SK_Mirror",
         },
         {
+          name: "반려동물 커뮤니티 사이트 - 댕세구",
+          detail: "2019년 MVC패턴을 활용한 커뮤니티 사이트 구현",
+          stack: ["Apache", "Tomcat", "Java", "JSP", "MySQL", "HTML", "CSS"],
+          img: "https://firebasestorage.googleapis.com/v0/b/hyem-portfolio.appspot.com/o/webprogramminglecture.png?alt=media&token=9828ba5e-5cfc-4d07-b72b-b91e2cd93a5e",
+          github: "https://github.com/HyeminNoh/MVC_JavaWebProject",
+        },
+        {
           name: "'글로벌엔지니어링(주)' 기업 사이트 제작",
           detail: "2017년 현장실습 기업의 웹 사이트를 제작",
           stack: ["Apache", "php", "javascript", "bootstrap"],
@@ -71,14 +78,14 @@ export default {
 <style>
 @media all and (min-width: 960px) {
     #project-content{
-      height: 100%;
+      height: auto !important;
     }
 }
 
 @media all and (max-width: 599px) and (min-width: 320px) {
     #project-content{
       height: auto !important;
-      padding-bottom: 10%;
+      padding-bottom: 30%;
     }
 }
 
