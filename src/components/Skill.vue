@@ -85,7 +85,7 @@ export default {
 @media all and (max-width: 599px) and (min-width: 320px) {
   #skill-content{
     height: auto;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
   }
 }
 .skill-icons{

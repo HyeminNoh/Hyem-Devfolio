@@ -157,12 +157,16 @@ export default {
 <style>
 #open-source-content{
   height: auto;
-  padding-bottom: 5em;
+}
+@media all and (max-width: 959px) and (min-width: 600px) {
+  #open-source-content{
+    height: auto;
+  }  
 }
 @media all and (max-width: 599px) and (min-width: 320px) {
   #open-source-content{
-    height: auto;
-    padding-bottom: 5%;
+    height: auto !important;
+    padding-bottom: 30%;
   }
 }
 .repo-card-div {
