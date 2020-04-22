@@ -20,6 +20,7 @@
     "cheerio": "^1.0.0-rc.3",
     "core-js": "^3.6.4",
     "graphql": "^15.0.0",
+    "v-animate-css": "0.0.3",
     "vue": "^2.6.11",
     "vue-apollo": "^3.0.3",
     "vue-fullpage.js": "^0.1.5"
