@@ -91,6 +91,9 @@ export default {
 }
 
 @media all and (max-width: 599px) and (min-width: 320px) {
+  .front-div {
+    margin-top: 35em;
+  }
   .background-div {
     visibility: hidden;
   }
