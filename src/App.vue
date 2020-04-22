@@ -36,10 +36,10 @@ export default {
       publicPath: process.env.BASE_URL,
       options: {
         paddingTop: "5%",
+        paddingBottom: "10%",
         anchors: ["home", "skills", "projects", "open-source"],
         sectionsColor: ["#F7F4E9", "#F7F4E9", "#F7F4E9", "#F7F4E9"],
         scrollOverflow: true,
-        recordHistory: false,
       }
     };
   }
