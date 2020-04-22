@@ -82,7 +82,7 @@ export default {
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
-    .front-div {
+  .front-div {
     margin-top: 15em;
   }
   .background-div {
@@ -92,12 +92,14 @@ export default {
 
 @media all and (max-width: 599px) and (min-width: 320px) {
   .front-div {
-    margin-top: 25em;
+    margin-left: 0.5em;
+    margin-top: 20em;
   }
   .background-div {
     visibility: hidden;
   }
 }
+
 #title {
   font-size: 2.5em;
   font-weight: bold;
@@ -106,23 +108,39 @@ export default {
   line-height: 1.8em;
   font-size: 1.25em;
 }
-.highlight-txt {
-  color: #438945;
-  font-weight: bold;
-}
 .main-btn {
   margin-top: 3em;
 }
 .main-btn #basic-btn {
+  margin-top: 1em;
   margin-right: 0.5em;
   border-color: #438945;
   color: #438945;
   font-size: 1.2em;
 }
 .main-btn #basic-btn:hover {
+  margin-top: 1em;
   margin-right: 0.5em;
   background-color: #438945;
   color: #ffffff;
   font-size: 1.2em;
 }
+@media all and (max-width: 599px) and (min-width: 320px) {
+  #title {
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+  #detail {
+    line-height: 1.8em;
+    font-size: 1em;
+  }
+  .main-btn {
+    font-size: 0.8em;
+  }
+}
+.highlight-txt {
+  color: #438945;
+  font-weight: bold;
+}
+
 </style>
