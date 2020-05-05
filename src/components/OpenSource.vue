@@ -17,7 +17,7 @@
           <b-col>
             <div class="repo-card-div" @click="togithub(pinnedRepo[n].node.url)">
               <div class="repo-name-div">
-                <p class="repo-name">{{ pinnedRepo[n].node.nameWithOwner }}</p>
+                <p class="repo-name">{{ pinnedRepo[n].node.name }}</p>
               </div>
               <p class="repo-description">{{ pinnedRepo[n].node.description }}</p>
               <div class="repo-stats">
@@ -41,7 +41,7 @@
           <b-col>
             <div class="repo-card-div" @click="togithub(pinnedRepo[n+1].node.url)">
               <div class="repo-name-div">
-                <p class="repo-name">{{ pinnedRepo[n+1].node.nameWithOwner }}</p>
+                <p class="repo-name">{{ pinnedRepo[n+1].node.name }}</p>
               </div>
               <p class="repo-description">{{ pinnedRepo[n+1].node.description }}</p>
               <div class="repo-stats">
@@ -110,35 +110,37 @@ export default {
     client
       .query({
         query: gql`
-          {
-            repositoryOwner(login: "${process.env.VUE_APP_GITHUB_NAME}") {
-              ... on User {
-                pinnedRepositories(first: 6) {
-                  edges {
-                    node {
-                      nameWithOwner
-                      description
-                      forkCount
-                      stargazers {
-                        totalCount
-                      }
-                      url
-                      id
-                      diskUsage
-                      primaryLanguage {
-                        name
-                        color
-                      }
-                    }
+        {
+        user(login: "${process.env.VUE_APP_GITHUB_NAME}") {
+          pinnedItems(first: 6, types: [REPOSITORY]) {
+            totalCount
+            edges {
+              node {
+                ... on Repository {
+                  name
+                  description
+                  forkCount
+                  stargazers {
+                    totalCount
+                  }
+                  url
+                  id
+                  diskUsage
+                  primaryLanguage {
+                    name
+                    color
                   }
                 }
               }
             }
           }
+        }
+      }
         `
       })
       .then(result => {
-        var repos = result.data.repositoryOwner.pinnedRepositories.edges;
+        var repos = result.data.user.pinnedItems.edges;
+        console.log(repos)
         this.pinnedRepo = repos;
         this.repolength = repos.length;
         if (repos.length % 2 == 0) {
