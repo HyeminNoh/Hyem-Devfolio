@@ -101,7 +101,7 @@ export default {
       request: operation => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${atob(process.env.VUE_APP_GITHUB_TOKEN)}`
+            authorization: `Bearer ${atob('OThhNDg4YzRhNzc5ZGQzNmZhYjYzODdkODcxNTMzMjEyNjVhNWQ5OQ')}`
           }
         });
       }
@@ -111,7 +111,7 @@ export default {
       .query({
         query: gql`
         {
-        user(login: "${process.env.VUE_APP_GITHUB_NAME}") {
+        user(login: "HyeminNoh") {
           pinnedItems(first: 6, types: [REPOSITORY]) {
             totalCount
             edges {
