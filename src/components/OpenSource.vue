@@ -101,7 +101,7 @@ export default {
       request: operation => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${atob('OThhNDg4YzRhNzc5ZGQzNmZhYjYzODdkODcxNTMzMjEyNjVhNWQ5OQ')}`
+            authorization: `Bearer ${atob('MjU5NWFhM2NiYjcyNjZjZTZiN2YxMTA1Yzk0YjJhZGYxNjU1NmM0Nw==')}`
           }
         });
       }
