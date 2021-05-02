@@ -40,7 +40,7 @@ export default {
     return {
       email: "mailto:shrmffkfk@naver.com",
       resume:
-        "https://drive.google.com/file/d/1ag1UL_PQcwdsbeiw1uiNKPEesmo5a2oE/view?usp=sharing"
+        "#"
     };
   },
   created: function() {}
